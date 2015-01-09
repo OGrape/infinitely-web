@@ -1,0 +1,7 @@
+node_modules
+pkg/psd
+*.log
+*.css
+*.html
+*.htm
+.DS_Store
