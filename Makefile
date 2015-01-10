@@ -12,6 +12,6 @@ clean:
 	sudo rm -rf node_modules build dist *.log
 
 test:
-	sudo npm install && grunt && ./node_modules/.bin/mocha
+	./node_modules/.bin/mocha
 
 .PHONY: all test deps clear-cache clean
