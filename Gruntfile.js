@@ -26,9 +26,9 @@ module.exports = function(grunt) {
             dist: {
                 files: [{
                     expand: true,
-                    cwd: 'src/',
-                    src: [ '**/*.{ png, jpg, gif }' ],
-                    dest: 'dist/'
+                    cwd: 'dist/__public/assets/raw',
+                    src: [ '**/*.{png,jpg,gif}' ],
+                    dest: 'dist/__public/assets/images'
                 }]
             }
         },
@@ -70,7 +70,38 @@ module.exports = function(grunt) {
                     to: grunt.timeStamp
                 }]
             }
+        },
+        convert_psd: {
+            build: {
+                src: 'pkg/psd/*.psd',
+                dest: 'dist/__public/assets/raw'
+            }
         }
+    });
+
+    grunt.registerMultiTask('convert_psd', 'Convert PSD files to PNG format', function() {
+        var done = this.async(),
+            fs = require('fs'),
+            path = require('path'),
+            parser = require('psd'),
+            chalk = require('chalk'),
+            totalSaved = 0;
+        this.files.forEach(function(file) {
+            grunt.log.writeln('Processing ' + file.src.length + ' files.');
+            fs.mkdirSync(file.dest);
+            file.src.forEach(function(f) {
+                parser.open(f).then(function (psd) {
+                    var dest = file.dest + '/' + path.basename(f, '.psd') + '.png';
+                    grunt.log.writeln('File ' + chalk.cyan(dest) + ' created.');
+                    return psd.image.saveAsPng(dest);
+                }).then(function () {
+                    totalSaved++;
+                    if( totalSaved >= file.src.length) {
+                        done(true);
+                    }
+                });
+            });
+        });
     });
 
     grunt.loadNpmTasks('grunt-contrib-concat');
@@ -81,6 +112,6 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-text-replace');
 
-    grunt.registerTask('default', ['concat', 'uglify', 'imagemin', 'less', 'cssmin', 'copy', 'replace']);
+    grunt.registerTask('default', ['concat', 'uglify', 'less', 'cssmin', 'copy', 'replace', 'convert_psd', 'imagemin']);
 
 };
