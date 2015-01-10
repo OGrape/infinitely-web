@@ -14,9 +14,36 @@
  * limitations under the License.
  *
  */
- 
-;(function() {
 
-	console.log('Hey Grunt is great');
+ 'use strict';
 
-})(window || this);
+ ;(function(exports) {
+
+ 	var nedb = require( 'nedb' ), 
+ 		db = new nedb({ filename: ( settings.database.storage || 'db/nedb/storage/data'), autoload: true }),
+ 		success = false,
+ 		connected = false;
+
+ 	exports.init = function() {
+ 		db.loadDatabase(function (err) {
+ 			success = !err;
+ 			connected = success;
+ 		});
+ 	}
+
+ 	exports.connect = function() {
+ 		if (!connected) {
+ 			exports.init();
+ 		}
+ 	}
+
+ 	exports.isConnected = function() {
+ 		return connected;
+ 	}
+
+ 	exports.query = function() {
+ 		var str = '';
+ 		
+ 	}
+
+ }) ( exports || this );

@@ -1,7 +1,8 @@
 node_modules
 build
 dist
-pkg/psd
+db
+config.json
 *.log
 *.css
 *.html

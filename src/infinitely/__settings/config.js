@@ -14,9 +14,37 @@
  * limitations under the License.
  *
  */
- 
-;(function() {
 
-	console.log('Hey Grunt is great');
+'use strict';
 
-})(window || this);
+(function( exports ) {
+
+	var fs = require('fs'),
+		__configfile;
+
+	if (fs.existsSync('config.json')) {
+		__configfile = require('../../config.json');
+	}
+
+	var __defaultconfig = {
+		'database'			: {
+			'type'			: 'nedb',
+			'host'			: '',
+			'user'			: '',
+			'pass'			: '',
+			'port'			: -1
+		}
+	}, __settings = __defaultconfig;
+
+	if (__configfile) {
+		var keys = Object.keys(__configfile);
+		for (var i = 0; i < keys.length; i++) {
+			var key = keys[ i ];
+			var val = __configfile[ key ];
+			__settings[ key ] = val;
+		}
+	}
+
+	exports.settings = __settings;
+
+})( exports || this );

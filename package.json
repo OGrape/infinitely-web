@@ -9,7 +9,9 @@
     },
     "dependencies": {
         "express": "4.10.7",
-        "ejs": "2.0.8"
+        "ejs": "2.0.8",
+        "psd": "~1.1.0",
+        "nedb": "1.1.1"
     },
     "devDependencies": {
         "mocha": "~2.1.0",

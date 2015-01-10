@@ -10,10 +10,10 @@ run: build
 	npm start
 
 clear-cache:
-	rm -rf build dist *.log
+	rm -rf build dist db *.log
 
 clean:
-	sudo rm -rf node_modules build dist *.log
+	sudo rm -rf node_modules build dist db *.log
 
 test:
 	./node_modules/.bin/mocha

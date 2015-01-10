@@ -14,9 +14,13 @@
  * limitations under the License.
  *
  */
- 
-;(function() {
 
-	console.log('Hey Grunt is great');
+ 'use strict';
 
-})(window || this);
+ ;(function(exports, global) {
+
+ 	global.settings = require( __dirname + '/__settings/config' ).settings;
+
+ 	global.database = require( __dirname + '/__database/' + settings.database.type );
+
+ }) ( exports || this, global || this );
