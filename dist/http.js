@@ -53,9 +53,9 @@
 		}
 
 		request({
-    		method: method.toUpperCase(),
-    		uri: 'http://127.0.0.1:' + exports.serverPort + path
-    	}, done)
+			method: method.toUpperCase(),
+			uri: 'http://127.0.0.1:' + exports.serverPort + path
+		}, done)
 	}
 
 })( exports || this );

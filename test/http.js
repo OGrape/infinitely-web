@@ -17,7 +17,7 @@ describe('User API',function() {
 	it('GET / should return 200', function(done) {
 		http.requestServer(function(error, response, body) {
 			chai.expect(response.statusCode).to.equal(200);
-			done()
+			done();
 		})
 	});
 

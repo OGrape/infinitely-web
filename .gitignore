@@ -4,4 +4,5 @@ pkg/psd
 *.css
 *.html
 *.htm
+*.sublime-workspace
 .DS_Store
