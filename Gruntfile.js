@@ -10,13 +10,13 @@ module.exports = function(grunt) {
                     'src/assets/js/vendor/*.js',
                     'src/assets/js/global.js'
                 ],
-                dest: 'dist/__assets/js/_infinitely_' + grunt.timeStamp + '.js',
+                dest: 'dist/__public/assets/js/_infinitely_' + grunt.timeStamp + '.js',
             }
         },
         uglify: {
             build: {
-                src: 'dist/__assets/js/_infinitely_' + grunt.timeStamp + '.js',
-                dest: 'dist/__assets/js/_infinitely_' + grunt.timeStamp + '.min.js'
+                src: 'dist/__public/assets/js/_infinitely_' + grunt.timeStamp + '.js',
+                dest: 'dist/__public/assets/js/_infinitely_' + grunt.timeStamp + '.min.js'
             }
         },
         imagemin: {
@@ -32,6 +32,27 @@ module.exports = function(grunt) {
                 }]
             }
         },
+        less: {
+            production: {
+                options: {
+                    paths: [ 'dist/__public/assets/styles' ]
+                },
+                files: {
+                    'dist/__public/assets/styles/__infinitely_.css': 'src/assets/styles/global.less'
+                }
+            }
+        },
+        cssmin: {
+            target: {
+                files: [{
+                    expand: true,
+                    cwd: 'dist/__public/assets/styles',
+                    src: ['*.css', '!*.min.css'],
+                    dest: 'dist/__public/assets/styles',
+                    ext: '.min.css'
+                }]
+            }
+        },
         copy: {
             main: {
                 expand: true,
@@ -40,13 +61,26 @@ module.exports = function(grunt) {
                 dest: 'dist/',
             }
         },
+        replace: {
+            assets_generate: {
+                src: ['dist/__template/*/*.ejs'],
+                overwrite: true,
+                replacements: [{
+                    from: /\{\{infinitely_generate_time\}\}/g,
+                    to: grunt.timeStamp
+                }]
+            }
+        }
     });
 
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-imagemin');
+    grunt.loadNpmTasks('grunt-contrib-less');
+    grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-copy');
+    grunt.loadNpmTasks('grunt-text-replace');
 
-    grunt.registerTask('default', ['concat', 'uglify', 'imagemin', 'copy']);
+    grunt.registerTask('default', ['concat', 'uglify', 'imagemin', 'less', 'cssmin', 'copy', 'replace']);
 
 };

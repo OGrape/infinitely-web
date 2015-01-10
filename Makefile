@@ -1,12 +1,16 @@
-REPORTER = dot
+all: run
 
-all: deps
+build: clear-cache
+	grunt
 
 deps:
 	sudo npm install
 
+run: build
+	npm start
+
 clear-cache:
-	sudo rm -rf build dist *.log
+	rm -rf build dist *.log
 
 clean:
 	sudo rm -rf node_modules build dist *.log
@@ -14,4 +18,4 @@ clean:
 test:
 	./node_modules/.bin/mocha
 
-.PHONY: all test deps clear-cache clean
+.PHONY: all test build deps run clear-cache clean
