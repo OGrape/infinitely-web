@@ -3,6 +3,7 @@ build
 dist
 db
 config.json
+vars.json
 *.log
 *.css
 *.html

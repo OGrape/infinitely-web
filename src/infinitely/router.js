@@ -1,7 +1,7 @@
 /**
  * Copyright 2014 ブドウの鳥 [develo.pe]
  *
- * Licensed under the Apache License, Version 2.0 (the "License");
+ * Licensed under the Apache License, Version 2.0 (the 'License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
@@ -19,19 +19,21 @@
 
 exports.listen = function(app) {
 
+	var cons = require('consolidate');
+
 	app.use(function(req, res, next) {
 	    next();
 	});
 
-	app.engine('.ejs', require('ejs').__express);
+	app.engine('dot', cons.dot);
 
 	app.set('views', __dirname + '/__template');
-	app.set('view engine', 'ejs');
+	app.set('view engine', 'dot');
 
 	app.use(require('express').static(__dirname + '/__public'));
 
 	app.get('/*', function (req, res) {
-		res.render('pages/home');
+		res.render('pages/home', variables);
 	})
 
 };

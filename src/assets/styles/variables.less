@@ -1,0 +1,101 @@
+/**
+ * Copyright 2014 ブドウの鳥 [develo.pe]
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ */
+ 
+.transition-single(@type, @duration) {
+	-webkit-transition: @type @duration;
+	-moz-transition: @type @duration;
+	-ms-transition: @type @duration;
+	-o-transition: @type @duration;
+	transition: @type @duration;
+}
+
+.transition-multiple(@action) {
+	-webkit-transition: @action;
+	-moz-transition: @action;
+	-ms-transition: @action;
+	-o-transition: @action;
+	transition: @action;
+}
+
+.load-animation-frames(@frames, @duration, @status) {
+	-webkit-animation: @frames @duration @status;
+	-moz-animation: @frames @duration @status;
+	-ms-animation: @frames @duration @status;
+	-o-animation: @frames @duration @status;
+	animation: @frames @duration @status;
+}
+
+.animation-frames-pause() {
+	-webkit-animation-play-state: paused;
+	-moz-animation-play-state: paused;
+	-ms-animation-play-state: paused;
+	-o-animation-play-state: paused;
+	animation-play-state: paused;
+}
+
+.animation-frames-start() {
+	-webkit-animation-play-state: running;
+	-moz-animation-play-state: running;
+	-ms-animation-play-state: running;
+	-o-animation-play-state: running;
+	animation-play-state: running;
+}
+
+.transform-translate(@x, @y) {
+	-webkit-transform: translate(@x, @y);
+	-moz-transform: translate(@x, @y);
+	-ms-transform: translate(@x, @y);
+	-o-transform: translate(@x, @y);
+	transform: translate(@x, @y);
+}
+
+.text-shadow-gen (@x: 0px, @y:0px, @b:0px, @c:#000) {
+	-webkit-text-shadow: @x @y @b @c;
+	-moz-text-shadow: @x @y @b @c;
+	-ms-text-shadow: @x @y @b @c;
+	-o-text-shadow: @x @y @b @c;
+	text-shadow: @x @y @b @c;
+}
+
+.background-gradient(@from-color: #363a45, @to-color: #2b2e37) {
+	background: @from-color;
+	background: -moz-linear-gradient(top,  @from-color 0%, @to-color 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,@from-color), color-stop(100%,@to-color));
+	background: -webkit-linear-gradient(top,  @from-color 0%,@to-color 100%);
+	background: -o-linear-gradient(top,  @from-color 0%,@to-color 100%);
+	background: -ms-linear-gradient(top,  @from-color 0%,@to-color 100%);
+	background: linear-gradient(to bottom,  @from-color 0%,@to-color 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=@from-color, endColorstr=@to-color,GradientType=0 );
+}
+
+.background-percentage-gradient(@from-color: #363a45, @to-color: #2b2e37, @start-at: 0%) {
+	background: @from-color;
+	background: -moz-linear-gradient(top,  @from-color @start-at, @to-color 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(@start-at,@from-color), color-stop(100%,@to-color));
+	background: -webkit-linear-gradient(top,  @from-color @start-at,@to-color 100%);
+	background: -o-linear-gradient(top,  @from-color @start-at,@to-color 100%);
+	background: -ms-linear-gradient(top,  @from-color @start-at,@to-color 100%);
+	background: linear-gradient(to bottom,  @from-color @start-at,@to-color 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=@from-color, endColorstr=@to-color,GradientType=0 );
+}
+
+.clear {
+	clear:both;
+}
+
+@layout-max-width: 1440px;
+

@@ -1,0 +1,71 @@
+{
+
+	"studio":"devstudio",
+	"studio_url":"https://devstudio.io",
+
+	"site_nav": [
+		{
+			"nav_item_name": "home",
+			"nav_item_url": "/"
+		},
+		{
+			"nav_item_name": "works",
+			"nav_item_url": "/works"
+		},
+		{
+			"nav_item_name": "about",
+			"nav_item_url": "/about"
+		},
+		{
+			"nav_item_name": "contact",
+			"nav_item_url": "/contact"
+		}
+	],
+
+	"site_home_section_intro_h2": "imagination &infin; while; infinitely",
+	"site_home_section_intro_p": "Art is not simply works of art; it is the spirit that knows Beauty, that has music in its being and the color of sunsets in its headkerchiefs",
+	"site_home_section_intro_img": "/assets/images/intro_image.png",
+	"site_home_section_intro_button": "MY DESIGN & CODE",
+	"site_home_section_intro_separate_text": "&bull; &bull; &bull; OR SCROLL &bull; &bull; &bull;",
+	"site_home_section_intro_scroll": "/assets/images/mouse_wheel.png",
+
+	"site_home_section_profile_h2": "Mauris non leo pharetra, blandit lorem id pellentesque",
+	"site_home_section_profile_p": "Donec aliquet est id tempus faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.",
+	"site_home_section_profile_gallery": [
+		"/assets/images/cd_cover.png",
+		"/assets/images/stories_cover.png",
+		"/assets/images/create_story_cover.png" ,
+		"/assets/images/face.png"
+	],
+	"site_home_section_profile_article": [
+		"My name is Samuel Ng",
+		"I’ve always loved solving problems. Being good at science, I graduated and worked as an electronics engineer before teaching myself design. ",
+		"I am currently working at Nutanix as a Designer. If you want, you can view my LinkedIn profile.",
+		"I show designs on Dribbble, and complain about nearly everything on my Twitter account (I’m French remember). I connect with my family & friends on Facebook."
+	],
+
+	"site_home_section_discover_h2": "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+	"site_home_section_discover_p": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+	"site_home_section_discover_items": [
+		{
+			"site_home_section_discover_item_color": "",
+			"site_home_section_discover_item_subcolor": "",
+			"site_home_section_discover_item_img": "/assets/images/nepal.png",
+			"site_home_section_discover_item_h3": "The release of Letraset sheets containing Lorem Ipsum passages",
+			"site_home_section_discover_item_p": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source."
+		},
+		{
+			"site_home_section_discover_item_h3": "The standard chunk of Lorem Ipsum used since the 1500s",
+			"site_home_section_discover_item_p": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text."
+		},
+		{
+			"site_home_section_discover_item_h3": "This book is a treatise on the theory of ethics",
+			"site_home_section_discover_item_p": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old."
+		},
+		{
+			"site_home_section_discover_item_h3": "Vivamus metus mi, dapibus ac tincidunt a, ullamcorper eget nibh.",
+			"site_home_section_discover_item_p": "Cras vel lectus sagittis, luctus turpis eget, fringilla nulla. Curabitur hendrerit viverra tempor. Integer sagittis augue velit, vitae tempor lorem porttitor in. Morbi quis lectus id metus tincidunt tristique. Maecenas sit amet velit at ligula rhoncus pulvinar. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;"
+		}
+	]
+
+}

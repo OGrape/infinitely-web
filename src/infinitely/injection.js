@@ -20,7 +20,12 @@
  ;(function(exports, global) {
 
  	global.settings = require( __dirname + '/__settings/config' ).settings;
-
  	global.database = require( __dirname + '/__database/' + settings.database.type );
+
+ 	global.template = require( __dirname + '/template' );
+
+ 	global.variables = require( __dirname + '/variables');
+
+ 	variables.template = template;
 
  }) ( exports || this, global || this );

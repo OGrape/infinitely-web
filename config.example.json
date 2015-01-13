@@ -1,5 +1,12 @@
 {
+	"site": {
+		"name": "Infinitely",
+		"name_simple": "infinitely",
+		"description": "The Design & Love",
+		"app_name": "Infinitely &infin; The Designer's Playground"
+	},
 	"database": {
-		"type": "nedb"
+		"type": "nedb",
+		"storage": "db/nedb/storage/data"
 	}
 }

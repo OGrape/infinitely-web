@@ -1,0 +1,10 @@
+<meta charset="UTF-8">
+<base href="/">
+<meta name="fragment" content="!" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="author" content="{{=it.site_name}}">
+<meta name="description" content="{{=it.site_description}}">
+<meta name="application-name" content="{{=it.site_app_name}}">
+<meta name="304Fix" content="safari-fix">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>{{=it.site_description}} | {{=it.site_name}}</title>

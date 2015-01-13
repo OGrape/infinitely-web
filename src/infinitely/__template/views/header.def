@@ -1,0 +1,22 @@
+<header class="site site-header">
+	<h1>{{=it.site_name}}</h1>
+	<a href="/" class="site site-logo">
+		{{=it.site_name}}
+	</a>
+	<a href="{{!it.studio_url}}" class="site site-{{=it.studio}}-logo site-studio-logo" target="_blank">
+		{{=it.studio}}
+	</a>
+	<nav class="site-header-nav">
+		<h2>{{=it.site_description}}</h2>
+		<ul>
+			{{~it.site_nav:item:index}}
+			<li>
+				<a href="{{=item.nav_item_url}}">{{=item.nav_item_name}}</a>
+			</li>
+			{{~}}
+			<li class="site clear"></li>
+		</ul>
+		<div class="site clear"></div>
+	</nav>
+	<div class="site clear"></div>
+</header>

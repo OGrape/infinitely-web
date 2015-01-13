@@ -9,7 +9,8 @@
     },
     "dependencies": {
         "express": "4.10.7",
-        "ejs": "2.0.8",
+        "consolidate": "0.10.0",
+        "dot": "~1.0.3",
         "psd": "~1.1.0",
         "chalk": "^0.5.1",
         "nedb": "1.1.1"

@@ -15,8 +15,10 @@
  *
  */
  
-;(function() {
+;(function(window) {
 
-	console.log('Hey Grunt is great');
+	window.onscroll = function (event) {
+		console.log('scrolling')
+	}
 
 })(window || this);

@@ -24,9 +24,17 @@
 
 	if (fs.existsSync('config.json')) {
 		__configfile = require('../../config.json');
+	} else if (fs.existsSync('config.example.json')) {
+		__configfile = require('../../config.example.json');
 	}
 
 	var __defaultconfig = {
+		'site'				: {
+			'name'			: 'name',
+			'name_simple'	: 'name',
+			'description'	: 'description',
+			'app_name'		: 'app_name'
+		},
 		'database'			: {
 			'type'			: 'nedb',
 			'host'			: '',
