@@ -15,10 +15,23 @@
  *
  */
  
+'use strict';
+
 ;(function(window) {
 
-	window.onscroll = function (event) {
-		console.log('scrolling')
-	}
+	window.storyair.component('header', ['module', function(module) {
+
+		var offset = 50,
+			onscroll = function(event) {
+				var name = document.body.scrollTop < offset ? 'nav-visible' : 'nav-hidden';
+				if (document.body.className != name) {
+					document.body.className = name;
+				}
+			};
+
+		window.onscroll = onscroll;
+		onscroll();
+
+	}]);
 
 })(window || this);

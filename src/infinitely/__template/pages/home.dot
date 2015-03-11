@@ -39,6 +39,17 @@
 				{{~}}
 			</article>
 		</section>
+		<section id="section-home-latest-work" class="site site-section site-section-home section-home-latest-work">
+			<h2>{{=it.site_home_section_latest_work_h2}}</h2>
+			<p>{{=it.site_home_section_latest_work_p}}</p>
+			<ul>
+				{{~it.site_home_section_latest_work_items:item:index}}
+				<li style="background:{{=item.site_home_work_bgcolor}} url(/assets/images/{{=item.site_home_work_img}});background-size: cover;">
+					<div class="item-work-mask">{{=item.site_home_work_title}}</div>
+				</li>
+				{{~}}
+			</ul>
+		</section>
 		<section id="section-home-discover" class="site site-section site-section-home section-home-discover">
 			<h2>{{=it.site_home_section_discover_h2}}</h2>
 			<p>{{=it.site_home_section_discover_p}}</p>

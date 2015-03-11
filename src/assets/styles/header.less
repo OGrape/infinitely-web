@@ -19,7 +19,7 @@
 	@view-padding: 50px;
 	margin:0;
 	padding:@view-padding;
-	width: 100%;
+	width: calc(~'100% - 100px');
 	max-width: @layout-max-width - (@view-padding * 2);
 	position: fixed;
 	z-index: 100;
@@ -89,8 +89,11 @@
 }
 
 .site-header-nav {
-	margin-top: 13px;
+	margin-top: 14px;
 	padding: 0;
+	opacity: 0;
+	visibility: hidden;
+	.transition-multiple(~'opacity 0.4s ease-in-out, visibility 0.4s ease-in-out');
 	& h2 {
 		display: none;
 	}
@@ -106,7 +109,7 @@
 	}
 	& a {
 		margin:0;
-		padding: 0 2px;
+		padding: 0 2px 6px 2px;
 		text-transform: uppercase;
 		text-decoration: none;
 		letter-spacing: 2px;
@@ -115,10 +118,20 @@
 		font-size: 13px;
 		color: #000;
 		display: block;
+		border-bottom: 1px solid transparent;
+		.transition-multiple(~'all 0.2s ease-in-out');
 		&.active,
 		&:hover {
-			border-bottom: 2px solid #000;
-			padding-bottom: 6px;
+			border-bottom-color:#000;
+		}
+	}
+}
+
+body {
+	&.nav-visible {
+		& .site-header-nav {
+			opacity: 1;
+			visibility: visible;
 		}
 	}
 }

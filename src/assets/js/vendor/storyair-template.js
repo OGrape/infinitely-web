@@ -23,13 +23,6 @@
 				Object.defineProperty(app.virtdom, c, {
 				    value: virtualdom().serialize(dom), writable: false
 				});
-				if (i == 0) {
-					var a = virtualdom().serialize(dom);
-					var b = virtualdom().serialize(dom);
-					b.child[0].value = 'user';
-					console.log(b);
-					console.log(virtualdom().diff(a, b));
-				}
 			}
 			if (app.component[c] && typeof app.component[c] == 'object') {
 				app.component[c].func.apply(this, parameters(app.component[c]));
