@@ -1,0 +1,7 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	{{#def.template.meta}}
+	{{#def.template.resource}}
+</head>
+<body>
