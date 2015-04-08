@@ -117,9 +117,8 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-less');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-copy');
-    grunt.loadNpmTasks('grunt-text-replace');
 
     // grunt.registerTask('default', ['concat', 'uglify', 'less', 'cssmin', 'copy', 'replace', 'convert_psd', 'imagemin']);
-    grunt.registerTask('default', ['concat', 'uglify', 'less', 'cssmin', 'copy', 'replace', 'convert_psd']);
+    grunt.registerTask('default', ['concat', 'uglify', 'less', 'cssmin', 'copy', 'convert_psd']);
 
 };
