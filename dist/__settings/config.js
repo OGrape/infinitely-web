@@ -41,6 +41,10 @@
 			'user'			: '',
 			'pass'			: '',
 			'port'			: -1
+		},
+		'gmail'				: {
+			'username'		: '',
+			'password'		: ''
 		}
 	}, __settings = __defaultconfig;
 

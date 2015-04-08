@@ -8,5 +8,9 @@
 	"database": {
 		"type": "nedb",
 		"storage": "db/nedb/storage/data"
+	},
+	"gmail": {
+		"username": "",
+		"password": ""
 	}
 }

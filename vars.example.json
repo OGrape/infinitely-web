@@ -1,20 +1,20 @@
 {
 
 	"studio":"devstudio",
-	"studio_url":"https://devstudio.io",
+	"studio_url":"http://develo.pe",
 
 	"site_nav": [
 		{
 			"nav_item_name": "about",
-			"nav_item_url": "/about"
+			"nav_item_url": "#about"
 		},
 		{
 			"nav_item_name": "works",
-			"nav_item_url": "/works"
+			"nav_item_url": "#works"
 		},
 		{
 			"nav_item_name": "contact",
-			"nav_item_url": "/contact"
+			"nav_item_url": "#contact"
 		}
 	],
 
@@ -22,7 +22,7 @@
 	"site_home_section_intro_p": "Art is not simply works of art; it is the spirit that knows Beauty, that has music in its being and the color of sunsets in its headkerchiefs",
 	"site_home_section_intro_img": "/assets/images/intro_image.png",
 	"site_home_section_intro_button": "MY DESIGN & CODE",
-	"site_home_section_intro_separate_text": "&bull; &bull; &bull; OR SCROLL &bull; &bull; &bull;",
+	"site_home_section_intro_separate_text": "&bull; &bull; &bull; SCROLL DOWN &bull; &bull; &bull;",
 	"site_home_section_intro_scroll": "",
 
 	"site_home_section_profile_h2": "Everyday life is fun",
@@ -33,14 +33,14 @@
 		"/assets/images/face.png"
 	],
 	"site_home_section_profile_article": [
-		"My name is Samuel Ng",
+		"I'm Samuel Ng",
 		"I'm an application developer. I have great passion for designing and coding. I've always loved to learn new technology skills.",
 		"I'm currently studying at Northern Alberta Institute of Technology in Edmonton, Alberta. Outside of classes, I do self-learning everyday and I build Web, Android and iOS applications.",
 		"I'm available for freelancing. I can help you with Application design, Web design, Web development and Software development."
 	],
 
 	"site_home_section_latest_work_h2": "Recent work",
-	"site_home_section_latest_work_p": "Look at some of my recent designing and programming works",
+	"site_home_section_latest_work_p": "Look at some of my recent designs and programming works",
 
 	"site_home_section_latest_work_items": [
 		{
@@ -94,7 +94,7 @@
 	],
 
 	"site_home_section_discover_h2": "My timeline",
-	"site_home_section_discover_p": "Everything about my designing and programming journey",
+	"site_home_section_discover_p": "Everything about my designs and programming journey",
 	"site_home_section_discover_items": [
 		{
 			"site_home_section_discover_item_color": "",
@@ -143,11 +143,6 @@
 		{
 			"site_home_section_discover_item_h3": "Node, Go Language, Docker, CoreOS, Websocket and more (2014)",
 			"site_home_section_discover_item_p": "Start learning to build networking applications using Node.JS and Go language. I also started learning how to deploy applications in large scale with Docker and CoreOS. With the mature of websocket technology, I started building real-time applications with websocket."
-		},
-		{
-			"site_home_section_discover_item_img": "/assets/images/storyair.png",
-			"site_home_section_discover_item_h3": "Storyair, real-time presentation application (2015)",
-			"site_home_section_discover_item_p": "Start building something fun and cool."
 		}
 	]
 

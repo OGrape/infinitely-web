@@ -5,8 +5,30 @@
 <div class="site site-wrapper">
 	{{#def.template.header}}
 	<main>
-		<a name="about"></a>
+<!-- 		<section id="section-home-intro" class="site site-section site-section-home section-home-intro">
+			<h2>{{=it.site_home_section_intro_h2}}</h2>
+			<p>{{=it.site_home_section_intro_p}}</p>
+			<img class="site-section-home site-intro-img" src="{{=it.site_home_section_intro_img}}">
+			<button class="site-section-home site-intro-btn">{{=it.site_home_section_intro_button}}</button>
+			{{? it.site_home_section_intro_separate_text }}
+			<div class="site-section-home site-intro-separate-text">{{=it.site_home_section_intro_separate_text}}</div>
+			{{?}}
+			{{? it.site_home_section_intro_scroll }}
+			<div class="site-section-home site-intro-scroll-container">
+				<img class="site-section-home site-intro-scroll" src="{{=it.site_home_section_intro_scroll}}">
+			</div>
+			{{?}}
+		</section> -->
 		<section id="section-home-profile" class="site site-section site-section-home section-home-profile">
+<!-- 			<h2>{{=it.site_home_section_profile_h2}}</h2>
+			<p>{{=it.site_home_section_profile_p}}</p>
+			<ul>
+				{{~it.site_home_section_profile_gallery:img:index}}
+				<li>
+					<img src="{{=img}}">
+				</li>
+				{{~}}
+			</ul> -->
 			<article>
 				{{~it.site_home_section_profile_article:text:index}}
 				{{? index === 0}}
@@ -17,7 +39,6 @@
 				{{~}}
 			</article>
 		</section>
-		<a name="works"></a>
 		<section id="section-home-latest-work" class="site site-section site-section-home section-home-latest-work">
 			<h2>{{=it.site_home_section_latest_work_h2}}</h2>
 			<p>{{=it.site_home_section_latest_work_p}}</p>
@@ -47,7 +68,6 @@
 				<div class="clear"></div>
 			</ol>
 		</section>
-		<a name="contact"></a>
 		<section id="section-home-contact" class="site site-section site-section-home section-home-contact">
 			<h2>Contact Me</h2>
 			<p>Have questions? Want to talk? Shoot me an email!</p>
@@ -56,14 +76,14 @@
 					<input type="text" name="name" class="site site-section section-contact-input" placeholder="Your Name" />
 				</li>
 				<li class="col-2">
-					<input type="text" name="email" class="site site-section section-contact-input" placeholder="Email Address" />
+					<input type="email" name="email" class="site site-section section-contact-input" placeholder="Email Address" />
 				</li>
 				<li class="clear"></li>
 				<li>
 					<textarea name="message" class="site site-section section-contact-textarea" placeholder="Write me something yeah!"></textarea>
 				</li>
 				<li>
-					<input type="submit" name="submit" class="site site-section section-contact-button" value="Ready? Shoot!" />
+					<input type="submit" name="submit" class="site site-section section-contact-button" value="Shoot!" />
 				</li>
 			</ul>
 		</section>

@@ -185,6 +185,7 @@
 			max-width: 700px;
 			font-family: flood-std,sans-serif;
 			font-size: 50px;
+			text-align: center;
 		}
 		& p {
 			margin: 20px auto 20px;
@@ -460,6 +461,94 @@
 		}
 		& p {
 			color:#fff;
+		}
+	}
+}
+.site.site-section.site-section-home.section-home-contact {
+	& ul {
+		max-width: calc(~'100% - 100px');
+		margin: 0 auto;
+		width: 850px;
+		padding: 0;
+	}
+	& li {
+		& .notification {
+			background: #f4f7f9;
+			border: 1px solid #d3dfe7;
+			color: #547e9a;
+			border-radius: 2px;
+			padding: 10px;
+			margin-bottom: 13px;
+			font-weight: 400;
+			font-family: proxima-nova;
+			font-size: 16px;
+		}
+		list-style: none;
+		&.col-2 {
+			margin:0;
+			padding:0;
+			width:50%;
+			float:left;
+		}
+		& input[type="text"],
+		& input[type="email"] {
+			height: 40px;
+			min-height: 40px;
+			line-height: 40px;
+			padding: 8px 0;
+			border: none;
+			border-bottom: 1px dotted #ccc;
+			width: calc(~'100% - 20px');
+			font-weight: 400;
+			font-family: proxima-nova;
+			font-size: 16px;
+			outline:none;
+			&:focus {
+				border-bottom-color: #AEEDFF;
+				border-bottom-style: solid;
+			}
+		}
+		& textarea {
+			margin-top:20px;
+			min-height:130px;
+			padding:8px 0;
+			border: none;
+			border-bottom: 1px dotted #ccc;
+			width:calc(~'100% - 16px');
+			font-weight: 400;
+			font-family: proxima-nova;
+			font-size: 16px;
+			outline:none;
+			resize:none;
+			&:focus {
+				border-bottom-color: #AEEDFF;
+				border-bottom-style: solid;
+			}
+		}
+		& input[type="submit"] {
+			outline: 0;
+			margin: 50px auto 30px;
+			padding: 0 20px;
+			background-color: #fff;
+			border: 1px solid #ddd;
+			box-shadow: 0 1px .5px 0 #efefef;
+			display: block;
+			color: #ccc;
+			text-align: center;
+			font-family: proxima-nova-soft,sans-serif;
+			font-size: 14px;
+			font-weight: 400;
+			border-radius: 2px;
+			letter-spacing: 2px;
+			height: 41px;
+			min-height: 40px;
+			line-height: 40px;
+			.transition-multiple(~'background-color 0.2s, box-shadow 0.2s, color 0.2s');
+			&:hover {
+				background-color: #fafafa;
+				box-shadow: 0 1px .5px 0 #eee;
+				color: #aaa;
+			}
 		}
 	}
 }
