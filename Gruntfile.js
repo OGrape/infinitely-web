@@ -27,13 +27,13 @@ module.exports = function(grunt) {
                     'src/assets/js/vendor/*.js',
                     'src/assets/js/global.js'
                 ],
-                dest: 'dist/__public/assets/js/_infinitely_' + grunt.timeStamp + '.js',
+                dest: 'dist/__public/assets/js/_infinitely_.js',
             }
         },
         uglify: {
             build: {
-                src: 'dist/__public/assets/js/_infinitely_' + grunt.timeStamp + '.js',
-                dest: 'dist/__public/assets/js/_infinitely_' + grunt.timeStamp + '.min.js'
+                src: 'dist/__public/assets/js/_infinitely_.js',
+                dest: 'dist/__public/assets/js/_infinitely_.min.js'
             }
         },
         imagemin: {
@@ -76,16 +76,6 @@ module.exports = function(grunt) {
                 cwd: 'src/infinitely/',
                 src: '**',
                 dest: 'dist/',
-            }
-        },
-        replace: {
-            assets_generate: {
-                src: ['dist/__template/*/*.{dot,def}'],
-                overwrite: true,
-                replacements: [{
-                    from: /\{\{infinitely_generate_time\}\}/g,
-                    to: grunt.timeStamp
-                }]
             }
         },
         convert_psd: {
