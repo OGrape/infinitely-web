@@ -59,13 +59,13 @@ exports.listen = function(app) {
 		};
 		res.setHeader('Content-Type', 'application/json');
 		if (typeof name == 'string' && !name.trim()) {
-			msg.error = 'Please enter your name buddy';
+			msg.error = 'Don’t forget to include your name';
 			res.end(JSON.stringify(msg));
 		} else if (typeof email == 'string' && !email.trim()) {
-			msg.error = 'Please enter your email buddy';
+			msg.error = 'I’ll need your email to reply back';
 			res.end(JSON.stringify(msg));
 		} else if (typeof email == 'string' && !(/^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/.test(email))) {
-			msg.error = 'Sorry! It seems like your email address is wrong';
+			msg.error = 'Did you mistype your email by accident?';
 			res.end(JSON.stringify(msg));
 		} else if (typeof message == 'string' && !message.trim()) {
 			msg.error = 'Haha I thought you are gonna tell me something';

@@ -15,6 +15,10 @@
 		{
 			"nav_item_name": "contact",
 			"nav_item_url": "#contact"
+		},
+		{
+			"nav_item_name": "blog",
+			"nav_item_url": "/blog"
 		}
 	],
 
@@ -35,12 +39,12 @@
 	"site_home_section_profile_article": [
 		"I'm Samuel Ng",
 		"I'm an application developer. I have great passion for designing and coding. I've always loved to learn new technology skills.",
-		"I'm currently studying at Northern Alberta Institute of Technology in Edmonton, Alberta. Outside of classes, I do self-learning everyday and I build Web, Android and iOS applications.",
-		"I'm available for freelancing. I can help you with Application design, Web design, Web development and Software development."
+		"I'm currently studying at Northern Alberta Institute of Technology in Edmonton, Alberta. Outside of classes, I do self-learning everyday and build Web, Android, and iOS applications.",
+		"I'm available for freelancing. I can help you with Application design, Web design, Web development, and Software development."
 	],
 
 	"site_home_section_latest_work_h2": "Recent work",
-	"site_home_section_latest_work_p": "Look at some of my recent designs and programming works",
+	"site_home_section_latest_work_p": "Feel free to browse through some of my recent work",
 
 	"site_home_section_latest_work_items": [
 		{
@@ -94,55 +98,55 @@
 	],
 
 	"site_home_section_discover_h2": "My timeline",
-	"site_home_section_discover_p": "Everything about my designs and programming journey",
+	"site_home_section_discover_p": "A never ending journey of designing and programming",
 	"site_home_section_discover_items": [
 		{
 			"site_home_section_discover_item_color": "",
 			"site_home_section_discover_item_subcolor": "",
 			"site_home_section_discover_item_img": "/assets/images/coding.png",
 			"site_home_section_discover_item_h3": "HTML 4 and CSS 2.1 (2005)",
-			"site_home_section_discover_item_p": "In the year of 2005, I had an interested to make websites and application programming. Since then, I stopped playing computer and online games and spent all my time to self-learning HTML 4, CSS 2.1 and some Javascript."
+			"site_home_section_discover_item_p": "In 2005, I had developed an interest to build websites and program applications. Since then, I stopped playing computer games and spent all my time to self-learning HTML 4, CSS 2.1, and some Javascript."
 		},
 		{
 			"site_home_section_discover_item_h3": "Java and Spring Framework (2006)",
-			"site_home_section_discover_item_p": "I had a huge passion for learning programming language, and I picked Java as my next learning programming language. Later I adopted Spring Framework to build web application."
+			"site_home_section_discover_item_p": "I had a huge passion for learning programming languages, and I picked Java as my next programming language to learn. Later I adopted Spring Framework to build web applications."
 		},
 		{
 			"site_home_section_discover_item_h3": "C, C++ and Assembly language (2007)",
-			"site_home_section_discover_item_p": "Since I started learning programming, I'm so hunger for programming knowledge. I started learning deeper languages like C, C++ and even deeper languages like Assembly language."
+			"site_home_section_discover_item_p": "Ever since I started learning programming, my hunger for programming knowledge increased. I started learning deeper languages like C, C++, and even deeper languages like Assembly language."
 		},
 		{
 			"site_home_section_discover_item_h3": "Networking and Security (2008 - 2009)",
-			"site_home_section_discover_item_p": "After building several web applications, I found that I need more networking and security knowledge to write a good piece of software code that ensure the high scalability of a software. Therefore, I started my network security studying in the year of 2008"
+			"site_home_section_discover_item_p": "After building several web applications, I found that I needed more networking and security knowledge to write a good piece of software code that ensured the high scalability of a software application. Therefore, I started studying more on network security in 2008."
 		},
 		{
 			"site_home_section_discover_item_h3": "Using Linux (2008 - 2009)",
-			"site_home_section_discover_item_p": "I used to develop everything on windows, and since 2008, I tried to write everything on Linux OS and build application that runs on a Linux server."
+			"site_home_section_discover_item_p": "I used to develop applications for Windows, and since 2008, I have been developing on the Linux/Mac OS to build applications that run on a Linux/Unix server."
 		},
 		{
 			"site_home_section_discover_item_h3": "Objective-C (2009)",
-			"site_home_section_discover_item_p": "I had my first iPhone in 2009. I started learning Objective-C in order to make iOS application."
+			"site_home_section_discover_item_p": "I had my first iPhone in 2009. I started learning Objective-C in order to make iOS applications."
 		},
 		{
-			"site_home_section_discover_item_h3": "HTML 5 and CSS 3 (2010)",
-			"site_home_section_discover_item_p": "As HTML 5 is getting more well-known and stable in the year of 2010, I started learning HTML 5 with CSS 3."
+			"site_home_section_discover_item_h3": "HTML5 and CSS3 (2010)",
+			"site_home_section_discover_item_p": "As HTML5 became more well-known and stable in 2010, I started learning HTML5 with CSS3."
 		},
 		{
 			"site_home_section_discover_item_h3": "Android [Java] (2010)",
-			"site_home_section_discover_item_p": "In the same year, I started learning to build Android application, which is programming in Java language."
+			"site_home_section_discover_item_p": "In the same year, I started to learn how to build Android applications which uses the Java language."
 		},
 		{
 			"site_home_section_discover_item_h3": "PHP and Javascript (2011)",
-			"site_home_section_discover_item_p": "As a fan of Java language, I used to make web application using Java. But I wanted some changes so that I started learning PHP by myself and advanced Javascript. I started building AJAX application which improves user experience."
+			"site_home_section_discover_item_p": "As a fan of the Java language, I have been making web applications using Java, but I wanted some changes. So I started learning PHP and advanced Javascript by myself. I also started building AJAX applications which improves user experience."
 		},
 		{
 			"site_home_section_discover_item_img": "/assets/images/school.png",
 			"site_home_section_discover_item_h3": "Start studying at Northern Alberta Institute of Technology (2013)",
-			"site_home_section_discover_item_p": "To challenge myself, I decided to go to college and prove what I've been learnt. I made friends there and improved my communcation skills at school."
+			"site_home_section_discover_item_p": "To challenge myself, I decided to go to college and improve more on what I've learned so far. I've made many friends at NAIT and have vastly improved my communication skills at school."
 		},
 		{
 			"site_home_section_discover_item_h3": "Node, Go Language, Docker, CoreOS, Websocket and more (2014)",
-			"site_home_section_discover_item_p": "Start learning to build networking applications using Node.JS and Go language. I also started learning how to deploy applications in large scale with Docker and CoreOS. With the mature of websocket technology, I started building real-time applications with websocket."
+			"site_home_section_discover_item_p": "I started to learn how to build networking applications using Node.JS and Go language. I also started learning how to deploy large scale applications with Docker and CoreOS. With the maturity of websocket technology, I started building real-time applications with Websocket."
 		}
 	]
 

@@ -1156,11 +1156,11 @@ Y.prototype.load=function(a){a(this.o)};function Z(a,b){this.d=a;this.f=b}Z.prot
 					e.preventDefault();
 					controller.result = '';
 					if (typeof controller.name == 'string' && !controller.name.trim()) {
-						controller.result = 'Please enter your name buddy';
+						controller.result = 'Don’t forget to include your name';
 					} else if (typeof controller.email == 'string' && !controller.email.trim()) {
-						controller.result = 'Please enter your email buddy';
+						controller.result = 'I’ll need your email to reply back';
 					} else if (typeof controller.email == 'string' && !(/^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/.test(controller.email))) {
-						controller.result = 'Sorry! It seems like your email address is wrong';
+						controller.result = 'Did you mistype your email by accident?';
 					} else if (typeof controller.message == 'string' && !controller.message.trim()) {
 						controller.result = 'Haha I thought you are gonna tell me something';
 					} else {
