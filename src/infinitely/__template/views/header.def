@@ -3,9 +3,6 @@
 	<a href="/" class="site site-logo">
 		{{=it.site_name}}
 	</a>
-	<a href="{{!it.studio_url}}" class="site site-{{=it.studio}}-logo site-studio-logo" target="_blank">
-		{{=it.studio}}
-	</a>
 	<nav class="site-header-nav">
 		<h2>{{=it.site_description}}</h2>
 		<ul>
